@@ -1,0 +1,176 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 100;
+    overflow-x: hidden;
+    background: #1c1c1c;
+}
+
+.primary {
+    padding: 0;
+}
+
+.video-wrapper {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.video-wrapper video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+.title-wrapper {
+    position: absolute;
+    left: 50%;
+    top: 45%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.title-wrapper div {
+    display: block;
+}
+
+.title-wrapper img {
+    width: 500px;
+}
+
+.title-wrapper span {
+    color: #fff;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+}
+
+.subtitle {
+    padding: 1em 0 2.5em 0;
+}
+
+.short-text {
+    display: none;
+}
+
+.title-wrapper a {
+    background: none;
+    border-color: #fff;
+    /* background: #007bff;
+    border-color: #007bff; */
+    color: #fff;
+    font-size: 1em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-indent: 0.3em;
+}
+
+.title-wrapper a:hover {
+    background: #007bff;
+    border-color: #007bff;
+    /* background: #096eda;
+    border-color: #096eda; */
+    color: #fff;
+}
+
+.secondary {
+    position: relative;
+    padding: 5em 0 1em 0;
+    color: #fff;
+}
+
+.secondary p {
+    text-align: center;
+    font-size: 3em;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+    text-indent: 0.3em;
+}
+
+.secondary form {
+    padding: 2em 0 0 0;
+    text-align: center;
+}
+
+.form-group label {
+    font-size: 0.8em;
+    letter-spacing: 0.3em;
+}
+
+.secondary button {
+    margin: 2em;
+    padding: 0.5em 1em 0.5em 1em;
+    /* background: #28a745;
+    border-color: #28a745; */
+    background: #007bff;
+    border-color: #007bff;
+    font-size: 0.8em;
+    font-weight: 400;
+    letter-spacing: 0.3em;
+    text-indent: 0.3em;
+}
+
+.footer {
+    margin: 7em 0 0 0;
+}
+
+.footer p {
+    font-size: 0.4em;
+    font-weight: 100;
+    letter-spacing: 0.3em;
+}
+
+@media screen and (max-width: 576px) {
+    .title-wrapper img {
+        width: 260px;
+    }
+
+    .title-wrapper span {
+        padding: 0.5em;
+        font-size: 0.7em;
+        letter-spacing: 0.5em;
+        text-indent: 0.5em;
+    }
+
+    .subtitle {
+        padding: 1em 0 2em 0;
+    }
+
+    .short-text {
+        display: block;
+    }
+
+    .full-text {
+        display: none;
+    }
+
+    .title-wrapper a {
+        width: 230px;
+        font-size: 0.8em;
+        letter-spacing: 0.2em;
+        text-indent: 0.2em;
+    }
+
+    .secondary p {
+        font-size: 2em;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+    }
+
+    .form-group label {
+        font-size: 0.6em;
+        letter-spacing: 0.3em;
+    }
+
+    .secondary button {
+        font-size: 0.6em;
+        letter-spacing: 0.3em;
+        text-indent: 0.3em;
+    }
+
+    .footer p {
+        font-size: 0.4em;
+        letter-spacing: 0.3em;
+    }
+
+}
