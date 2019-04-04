@@ -7,18 +7,23 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     
-    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="./css/styles.css">
 
     <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400" rel="stylesheet">
 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.0/css/all.css" integrity="sha384-Mmxa0mLqhmOeaE8vgOSbKacftZcsNYDjQzuCOm6D02luYSzBG8vpaOykv9lFQ51Y" crossorigin="anonymous">
+
     <title>Dodeca</title>
   </head>
+
   <body>
     <div class="primary container-fluid">
         <div class="video-wrapper">
             <video id="landing-page-bg" playsinline autoplay muted loop>
-                <source src="assets/landing-page-bg.mp4" type="video/mp4">
+                <source src="assets/landing-page-bg-compressed.mp4" type="video/mp4">
             </video>
+
+            <img src="assets/landing-page-img_v1.png">
         </div>
 
         <div class="title-wrapper">
@@ -43,7 +48,7 @@
             </div>
 
             <div>
-                <a class="btn btn-outline-primary btn-lg" href="#" role="button">DOWNLOAD PORTFOLIO</a>
+                <a class="btn btn-outline-primary btn-lg" href="https://drive.google.com/open?id=1nFPNoBt7L2xrZlRnT0iCFipa7Q89uMg8" download="Dodeca - Portfolio.pdf" target="blank"><i class="fas fa-download"></i> DOWNLOAD PORTFOLIO</a>
             </div>
         </div>
 
@@ -53,34 +58,39 @@
                     <p>INQUIRE</p>
                 </div>
 
-                <div class="col-12">
-                    <form id="formData">
+                <div class="col-12" id="replace">
+                    <form name="formSubmit" id="form-submit">
                         <div class="form-group">
-                            <label for="input">FULL NAME</label><br>
+                            <label for="input">FULL NAME
+                            </label><br>
 
-                            <input class="text" placeholder=""></input>
+                            <input class="input" type="text" name="fullName" placeholder="" required></input>
                         </div>
 
                         <div class="form-group">
                             <label for="input">EMAIL</label><br>
 
-                            <input class="text" placeholder=""></input>
+                            <input class="input" type="email" name="email" placeholder="" required></input>
                         </div>
 
                         <div class="form-group">
                             <label for="input">MOBILE</label><br>
 
-                            <input class="text" placeholder=""></input>
+                            <input class="input" type="text" name="mobile" maxlength="11" placeholder=""></input>
                         </div>
 
                         <div class="form-group">
                             <label for="input">MESSAGE</label><br>
 
-                            <textarea class="message"></textarea>
+                            <textarea class="input" type="text" name="message" required></textarea>
                         </div>
 
                         <div>
-                            <button class="submit btn-primary btn-sm" type="submit" form="formData" formaction="#">SUBMIT</button>
+                            <button class="submit btn-primary btn-sm" type="submit" id="btnSubmit">SUBMIT</button><br>
+                        </div>
+
+                        <div class="alert alert-success" id="btnSuccess" role="alert">
+                            Your response has been recorded. Thank you!
                         </div>
                     </form>
                 </div>
@@ -92,10 +102,10 @@
                 </div>
             </div>
         </div>
+
+        <script src="./js/script.js"></script>
     </div>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="js/jquery-3.3.1.slim.min.js"></script>
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
